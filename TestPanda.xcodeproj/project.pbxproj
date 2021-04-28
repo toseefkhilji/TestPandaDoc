@@ -3,19 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D22483F62637D25F0039F6A3 /* IFrameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22483F52637D25F0039F6A3 /* IFrameViewController.swift */; };
 		D235A8CA26301D1300EA0F8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D235A8C926301D1300EA0F8F /* AppDelegate.swift */; };
 		D235A8CC26301D1300EA0F8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D235A8CB26301D1300EA0F8F /* SceneDelegate.swift */; };
 		D235A8CE26301D1300EA0F8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D235A8CD26301D1300EA0F8F /* ViewController.swift */; };
 		D235A8D126301D1300EA0F8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D235A8CF26301D1300EA0F8F /* Main.storyboard */; };
 		D235A8D326301D1500EA0F8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D235A8D226301D1500EA0F8F /* Assets.xcassets */; };
 		D235A8D626301D1500EA0F8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D235A8D426301D1500EA0F8F /* LaunchScreen.storyboard */; };
+		D235A8E226301FD300EA0F8F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D235A8E126301FD300EA0F8F /* Alamofire */; };
+		D2FE4B1426367492003F305C /* PandaDocAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FE4B1326367492003F305C /* PandaDocAPIManager.swift */; };
+		D2FE4B1826368A44003F305C /* DocCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FE4B1726368A44003F305C /* DocCreateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D22483F52637D25F0039F6A3 /* IFrameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IFrameViewController.swift; sourceTree = "<group>"; };
 		D235A8C626301D1300EA0F8F /* TestPanda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestPanda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D235A8C926301D1300EA0F8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D235A8CB26301D1300EA0F8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,8 @@
 		D235A8D226301D1500EA0F8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D235A8D526301D1500EA0F8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D235A8D726301D1500EA0F8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2FE4B1326367492003F305C /* PandaDocAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PandaDocAPIManager.swift; sourceTree = "<group>"; };
+		D2FE4B1726368A44003F305C /* DocCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocCreateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D235A8E226301FD300EA0F8F /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +67,9 @@
 				D235A8C926301D1300EA0F8F /* AppDelegate.swift */,
 				D235A8CB26301D1300EA0F8F /* SceneDelegate.swift */,
 				D235A8CD26301D1300EA0F8F /* ViewController.swift */,
+				D2FE4B1726368A44003F305C /* DocCreateViewController.swift */,
+				D22483F52637D25F0039F6A3 /* IFrameViewController.swift */,
+				D2FE4B1326367492003F305C /* PandaDocAPIManager.swift */,
 				D235A8CF26301D1300EA0F8F /* Main.storyboard */,
 				D235A8D226301D1500EA0F8F /* Assets.xcassets */,
 				D235A8D426301D1500EA0F8F /* LaunchScreen.storyboard */,
@@ -83,6 +94,9 @@
 			dependencies = (
 			);
 			name = TestPanda;
+			packageProductDependencies = (
+				D235A8E126301FD300EA0F8F /* Alamofire */,
+			);
 			productName = TestPanda;
 			productReference = D235A8C626301D1300EA0F8F /* TestPanda.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +124,9 @@
 				Base,
 			);
 			mainGroup = D235A8BD26301D1300EA0F8F;
+			packageReferences = (
+				D235A8E026301FD300EA0F8F /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = D235A8C726301D1300EA0F8F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +154,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2FE4B1826368A44003F305C /* DocCreateViewController.swift in Sources */,
 				D235A8CE26301D1300EA0F8F /* ViewController.swift in Sources */,
 				D235A8CA26301D1300EA0F8F /* AppDelegate.swift in Sources */,
+				D22483F62637D25F0039F6A3 /* IFrameViewController.swift in Sources */,
+				D2FE4B1426367492003F305C /* PandaDocAPIManager.swift in Sources */,
 				D235A8CC26301D1300EA0F8F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +309,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4F268M264H;
 				INFOPLIST_FILE = TestPanda/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +329,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4F268M264H;
 				INFOPLIST_FILE = TestPanda/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,6 +363,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D235A8E026301FD300EA0F8F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D235A8E126301FD300EA0F8F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D235A8E026301FD300EA0F8F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D235A8BE26301D1300EA0F8F /* Project object */;
 }
